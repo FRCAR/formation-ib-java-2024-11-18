@@ -81,4 +81,11 @@ public class Maison implements Comparable<Maison> {
                 ", prixAchat=" + prixAchat +
                 '}';
     }
+
+    public void agranditMaison(float hauteur){
+        if(hauteur < 0){
+            throw new IllegalArgumentException("impossible d'agrandir avec une hauteur négative.");
+        }
+        System.out.println("La maison est agrandie");
+    }
 }
