@@ -9,7 +9,7 @@ public class PaiementService {
 
 	public boolean paie(String emailClient, int prixTotal) {
 		if(emailClient == null) {
-			return true;
+			return false;
 		}
 		if(prixTotal < 0 || prixTotal > PRIX_MAXIMUM) {
 			return false;
